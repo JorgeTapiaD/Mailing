@@ -53,6 +53,19 @@
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
   }
 
+  #banner hr{
+    height: 100%; /* Altura de la línea */
+    width: 2px; /* Ancho de la línea */
+    background-image: linear-gradient(to bottom, #00fff7, #0051ff, #00fff7); /* Gradiente de colores */
+    border: none;
+  }
+
+  #title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   #navbar{
     position: sticky;
     top:0;
@@ -67,10 +80,12 @@
     width: 100vw;
   }
   
-  .banner{
+  #banner{
     width: 100%;
-    background: linear-gradient(to right, #56fcff, #004cff);
-    color: #fff;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+     url(../img/banner.png);
+    background-size: cover;
+    background-position: center center;
   }
 
 ::-webkit-scrollbar {
